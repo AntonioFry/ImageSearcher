@@ -2,7 +2,7 @@
   <form id="image-search" @submit.prevent="handleSubmit">
     <label>Search Image</label>
     <input type="text"/>
-    <button>Search<button>
+    <button>Search</button>
   </form>
 </template>
 
