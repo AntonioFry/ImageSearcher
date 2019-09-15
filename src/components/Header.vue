@@ -1,22 +1,26 @@
 <template>
-  <header id='image-searcher-header'>
+  <header id='project-header'>
     <h1>ImageSearcher</h1>
   </header>
 </template>
 
 <script>
-export default {
-  name: 'image-searcher-header'
-}
+  export default {
+    name: 'project-header',
+  }
 </script>
 
 <style scoped>
   h1 {
     color: white;
+    margin: 0;
   }
   header {
-    background: black;
-    padding: 0px 5px;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 75px;
+    padding: 0px 10px;
     width: 100%;
   }
 </style>

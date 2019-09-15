@@ -1,20 +1,22 @@
 <template>
   <main id="app">
-    <image-searcher-header />
+    <ProjectHeader />
   </main>
 </template>
 
 <script>
-import Header from './components/Header';
+import ProjectHeader from './components/Header';
 
 export default {
   name: 'app',
   components: {
-    Header
+    ProjectHeader,
   }
 }
 </script>
 
 <style>
-
+  body {
+    margin: 0;
+  }
 </style>
