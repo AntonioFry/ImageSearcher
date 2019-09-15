@@ -1,5 +1,5 @@
 <template>
-  <form id="image-search">
+  <form id="image-search" @submit.prevent="handleSubmit">
     <label>Search Image</label>
     <input type="text"/>
     <button>Search<button>
@@ -16,6 +16,11 @@ export default {
       },
     }
   },
+  methods: {
+    handleSubmit() {
+      this.$emit('set:search-results', this.search)
+    }
+  }
 }
 </script>
 
