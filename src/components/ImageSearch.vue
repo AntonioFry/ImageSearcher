@@ -8,7 +8,14 @@
 
 <script>
 export default {
-  name: 'image-search'
+  name: 'image-search',
+  data() {
+    return {
+      search: {
+        param: ''
+      },
+    }
+  },
 }
 </script>
 
