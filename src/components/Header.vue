@@ -11,5 +11,12 @@ export default {
 </script>
 
 <style scoped>
-
+  h1 {
+    color: white;
+  }
+  header {
+    background: black;
+    padding: 0px 5px;
+    width: 100%;
+  }
 </style>
