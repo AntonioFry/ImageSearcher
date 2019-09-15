@@ -1,7 +1,7 @@
 <template>
   <header id='image-searcher-header'>
     <h1>ImageSearcher</h1>
-  <header>
+  </header>
 </template>
 
 <script>
