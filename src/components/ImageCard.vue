@@ -1,7 +1,9 @@
 <template>
-  <div id="image-card">
-    <img :src='data.urls.thumb' />
-    <p>{{ data.alt_description }}</p>
+  <div id="image-card" class="main-container">
+    <img :src='data.urls.thumb' :alt="data.alt_description"/>
+    <div class="text-container">
+      <p>{{ data.alt_description }}</p>
+    </div>
   </div>
 </template>
 
@@ -15,11 +17,15 @@ export default {
 </script>
 
 <style scoped>
-  div {
-    width: 300px;
+  .main-container {
+    border: 1px solid rgb(223, 223, 223);
+    margin: 7px;
+    width: 200px;
   }
-  image {
-    height: 100px;
-    width: 100px;
+  p {
+    text-align: center;
+  }
+  .text-container {
+    padding: 0px 4px;
   }
 </style>

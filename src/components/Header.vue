@@ -20,7 +20,7 @@
     background-color: black;
     display: flex;
     height: 75px;
-    padding: 0px 10px;
+    padding: 0px 25px;
     width: 100%;
   }
 </style>

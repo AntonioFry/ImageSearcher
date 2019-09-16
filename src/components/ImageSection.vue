@@ -20,7 +20,11 @@ export default {
 
 <style scoped>
   section {
-    min-height: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1000px;
     width: 100%;
   }
 </style>
