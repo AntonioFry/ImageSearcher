@@ -6,7 +6,10 @@
 
 <script>
 export default {
-  name: 'image-card'
+  name: 'image-card',
+  props: {
+    
+  }
 }
 </script>
 
