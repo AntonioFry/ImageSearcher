@@ -1,6 +1,6 @@
 <template>
   <div id="image-card">
-    <!-- <img /> -->
+    <img :src='data.urls.thumb' />
     <p>{{ data.alt_description }}</p>
   </div>
 </template>
@@ -15,5 +15,11 @@ export default {
 </script>
 
 <style scoped>
-
+  div {
+    width: 300px;
+  }
+  image {
+    height: 100px;
+    width: 100px;
+  }
 </style>
