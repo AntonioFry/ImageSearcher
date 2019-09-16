@@ -2,7 +2,7 @@
   <section id="image-search">
     <form @submit.prevent="handleSubmit">
       <label>Search Image</label>
-      <input type="text"/>
+      <input type="text" v-model="search.param" />
       <button>Search</button>
     </form>
   </section>
