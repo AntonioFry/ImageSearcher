@@ -1,6 +1,6 @@
 <template>
   <div id="image-card">
-    <img />
+    <!-- <img /> -->
     <p>{{ data.alt_description }}</p>
   </div>
 </template>

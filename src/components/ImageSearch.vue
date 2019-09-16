@@ -1,6 +1,6 @@
 <template>
-  <section id="image-search">
-    <form @submit.prevent="handleSubmit">
+  <section>
+    <form id="image-search" @submit.prevent="handleSubmit">
       <label>Search Image</label>
       <input type="text" v-model="search.param" />
       <button>Search</button>

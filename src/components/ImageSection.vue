@@ -19,5 +19,8 @@ export default {
 </script>
 
 <style scoped>
-
+  section {
+    min-height: 500px;
+    width: 100%;
+  }
 </style>
