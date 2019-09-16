@@ -2,13 +2,14 @@
   <main id="app">
     <ProjectHeader />
     <ImageSearch @set:search-result="searchImages"/>
+    <ImageSection :searchResults="searchResults"/>
   </main>
 </template>
 
 <script>
 import ProjectHeader from './components/Header';
 import ImageSearch from './components/ImageSearch';
-import ImageCard from './components/ImageCard';
+import ImageSection from './components/ImageSection';
 import { accessKey } from '../apiKeys';
 
 export default {
@@ -16,6 +17,7 @@ export default {
   components: {
     ProjectHeader,
     ImageSearch,
+    imageSection
   },
   data() {
     return {

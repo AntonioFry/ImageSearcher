@@ -1,12 +1,12 @@
 <template>
-  <div id="image-card">
+  <section id="image-section">
     <image />
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  name: "image-card",
+  name: "image-section",
 }
 </script>
 
