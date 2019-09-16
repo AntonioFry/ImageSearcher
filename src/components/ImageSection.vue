@@ -11,6 +11,9 @@ export default {
   name: "image-section",
   props: {
     searchResults: Array,
+  },
+  components: {
+    ImageCard
   }
 }
 </script>

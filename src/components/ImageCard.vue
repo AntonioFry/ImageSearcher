@@ -1,6 +1,7 @@
 <template>
   <div id="image-card">
     <img />
+    <p>{{ data.alt_description }}</p>
   </div>
 </template>
 
@@ -8,7 +9,7 @@
 export default {
   name: 'image-card',
   props: {
-    
+    data: Object
   }
 }
 </script>

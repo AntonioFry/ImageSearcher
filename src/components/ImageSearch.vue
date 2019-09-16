@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     handleSubmit() {
-      this.$emit('set:search-results', this.search)
+      this.$emit('set:search-results', this.search.param)
     }
   }
 }
