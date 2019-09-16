@@ -1,7 +1,7 @@
 <template>
   <main id="app">
     <ProjectHeader />
-    <ImageSearch />
+    <ImageSearch @set:search-result="searchImages"/>
   </main>
 </template>
 
@@ -14,6 +14,11 @@ export default {
   components: {
     ProjectHeader,
     ImageSearch,
+  },
+  data() {
+    return {
+      searchResults: [],
+    }
   }
 }
 </script>
