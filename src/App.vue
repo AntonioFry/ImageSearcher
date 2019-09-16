@@ -27,7 +27,10 @@ export default {
       try {
         const response = await fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchParam}&client_id=${accessKey}`);
         const results = await response.json();
-        this.searchResults = results
+        const cleanedData = results.map(data => {
+          return { alt_description: data.alt_description, urls: data.urls }
+        });
+        this.searchResults = cleanedData;
       } catch (error) {
         this.error = error.message
       }
