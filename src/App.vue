@@ -8,6 +8,7 @@
 <script>
 import ProjectHeader from './components/Header';
 import ImageSearch from './components/ImageSearch';
+import ImageCard from './components/ImageCard';
 import { accessKey } from '../apiKeys';
 
 export default {
