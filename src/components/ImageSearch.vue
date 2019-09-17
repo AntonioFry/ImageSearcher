@@ -1,8 +1,8 @@
 <template>
-  <section id="image-search">
-    <form @submit.prevent="handleSubmit">
+  <section>
+    <form id="image-search" @submit.prevent="handleSubmit">
       <label>Search Image</label>
-      <input type="text"/>
+      <input type="text" v-model="search.param" />
       <button>Search</button>
     </form>
   </section>
@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     handleSubmit() {
-      this.$emit('set:search-results', this.search)
+      this.$emit('set:search-results', this.search.param)
     }
   }
 }
