@@ -35,7 +35,8 @@ export default {
   form {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    margin: 10px 0px;
+    width: 15%;
   }
   label {
     font-size: 1.5em;
@@ -43,8 +44,11 @@ export default {
   }
   button,
   input {
+    border: 1px solid black;
+    border-radius: 20px;
     font-size: 1em;
-    height: 20px;
+    height: 30px;
     margin: 5px 0;
+    padding: 0px 10px;
   }
 </style>
