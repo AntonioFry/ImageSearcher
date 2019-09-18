@@ -20,6 +20,7 @@ export default {
 
 <style scoped>
   section {
+    align-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
