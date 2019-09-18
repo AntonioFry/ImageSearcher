@@ -10,7 +10,8 @@
 import ProjectHeader from './components/Header';
 import ImageSearch from './components/ImageSearch';
 import ImageSection from './components/ImageSection';
-import { accessKey } from '../apiKeys';
+
+const API_KEY = process.env.VUE_APP_API_KEY
 
 export default {
   name: 'app',
@@ -28,7 +29,7 @@ export default {
   methods: {
     async searchImages (searchParam) {
       try {
-        const response = await fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchParam}&client_id=${accessKey}`);
+        const response = await fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchParam}&client_id=${API_KEY}`);
         const results = await response.json();
         const cleanedData = results.results.map(data => {
           return { id: data.id, alt_description: data.alt_description, urls: data.urls }
